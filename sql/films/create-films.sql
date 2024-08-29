@@ -1,3 +1,5 @@
+DROP DATABASE IF EXISTS films;
+
 CREATE TABLE films(
   id SERIAL PRIMARY KEY,
   title varchar(255) NOT null,
@@ -6,4 +8,4 @@ CREATE TABLE films(
   score integer CHECK (score >= 0 AND score <= 10),
 
   UNIQUE(title)
-)
+);
