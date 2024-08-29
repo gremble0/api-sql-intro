@@ -1,8 +1,7 @@
 CREATE TABLE products(
- id serial primary key,
- name varchar(255) not null,
- price int not null,
+ id serial PRIMARY KEY,
+ name varchar(255) NOT null,
+ price int NOT null,
  discount boolean,
- unique(name)
+ UNIQUE(name)
 )
-
